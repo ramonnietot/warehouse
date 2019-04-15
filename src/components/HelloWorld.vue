@@ -4,7 +4,7 @@
 
       <a-plane position="0" color="#4CC3D9" depth="0" :height="plant.floor1.floor.height" :width="plant.floor1.floor.width" rotation="-90 0 0"></a-plane>
 
-      <a-box v-for="aisle in plant.floor1.aisle" :height="aisle.height" :width="aisle.width" :depth="aisle.depth" :color="aisle.color" :position="aisle.startposition.x + ' 5 ' + aisle.startposition.y"></a-box>
+      <a-box v-for="(aisle,index) in plant.floor1.aisle" v-bind:key="index" :height="aisle.height" :width="aisle.width" :depth="aisle.depth" :color="aisle.color" :position="aisle.startposition.x + ' 5 ' + aisle.startposition.y"></a-box>
 
     </a-scene>
 
@@ -18,64 +18,63 @@ export default {
     return {
       plant: {
         floor1: {
-          floor:{
+          floor: {
             height: 20,
-            width: 20,
+            width: 20
           },
-          aisle:[{
+          aisle: [{
             height: 10,
-            width:10,
-            depth:0.2,
-            color:"red",
-            startposition:{
-              x:0,
-              y:-10
+            width: 10,
+            depth: 0.2,
+            color: 'red',
+            startposition: {
+              x: 0,
+              y: -10
             }
 
           },
-            {
+          {
             height: 10,
-            width:10,
-            depth:0.2,
-              color:"yellow",
-            startposition:{
-              x:0,
-              y:-5
+            width: 10,
+            depth: 0.2,
+            color: 'yellow',
+            startposition: {
+              x: 0,
+              y: -5
             }
 
           }, {
             height: 10,
-            width:10,
-            depth:0.2,
-              color:"blue",
-            startposition:{
-              x:0,
-              y:0
+            width: 10,
+            depth: 0.2,
+            color: 'blue',
+            startposition: {
+              x: 0,
+              y: 0
             }
 
           }, {
             height: 10,
-            width:10,
-            depth:0.2,
-              color:"green",
-            startposition:{
-              x:0,
-              y:5
+            width: 10,
+            depth: 0.2,
+            color: 'green',
+            startposition: {
+              x: 0,
+              y: 5
             }
 
           }, {
             height: 10,
-            width:10,
-            depth:0.2,
-              color:"pink",
-            startposition:{
-              x:0,
-              y:10
+            width: 10,
+            depth: 0.2,
+            color: 'pink',
+            startposition: {
+              x: 0,
+              y: 10
             }
 
           }
           ]
-
 
         }
       }
