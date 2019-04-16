@@ -43,37 +43,7 @@ export default {
             startposition: {
               x: 0,
               y: -10
-            },
-            sections:[
-              {
-                height: 10,
-                width: 3,
-                color: 'black',
-                startposition: {
-                  x: 0,
-                  y: 0
-                },
-                shelves:[
-                  {  height: 5,
-                  width: 3,
-                  color: 'white',
-                  startposition: {
-                  x: 0,
-                  y: 0
-                }
-                  }
-                ]
-              },
-              {
-                height: 10,
-                width: 4,
-                color: 'grey',
-                startposition: {
-                  x: 4,
-                  y: 0
-                }
-              }
-            ]
+            }
 
           },
           {
@@ -104,7 +74,37 @@ export default {
             startposition: {
               x: 0,
               y: 5
-            }
+            },
+              sections:[
+                {
+                  height: 10,
+                  width: 3,
+                  color: 'black',
+                  startposition: {
+                    x: 0,
+                    y: 0
+                  },
+                  shelves:[
+                    {  height: 5,
+                      width: 3,
+                      color: 'white',
+                      startposition: {
+                        x: 0,
+                        y: 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  height: 10,
+                  width: 4,
+                  color: 'grey',
+                  startposition: {
+                    x: 4,
+                    y: 0
+                  }
+                }
+              ]
 
           }, {
             height: 10,
